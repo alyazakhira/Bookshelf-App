@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf App | Dicoding Final Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <h2>Bookshelf App</h2>
+    </header>
+    <main id="main">
+        <section class="section-wrapper" id="searchSection">
+            <h4>Search for Saved Book</h4>
+            <form class="search-form" id="searchBook">
+                <input class="form-input" id="searchBookTitle" type="text">
+                <button class="submit-button" id="searchSubmit" type="submit">Search</button>
+            </form>
+        </section>
+        <div class="flex-container" id="listWrapper">
+            <section class="section-wrapper" id="inputSection">
+                <h4>Save Book</h4>
+                <form class="book-form" id="inputBook">
+                    <div class="book-form-text">
+                        <label class="form-label" for="inputBookTitle">Title</label>
+                        <input class="form-input" id="inputBookTitle" type="text" required>
+                    </div>
+                    <div class="book-form-text">
+                        <label class="form-label" for="inputBookAuthor">Author</label>
+                        <input class="form-input" id="inputBookAuthor" type="text" required>
+                    </div>
+                    <div class="book-form-text">
+                        <label class="form-label" for="inputBookYear">Year</label>
+                        <input class="form-input" id="inputBookYear" type="number" required>
+                    </div>
+                    <button class="submit-button" id="bookSubmit" type="submit">Save to Unfinished List</button>
+                    </form>
+            </section>
+
+            <div style="min-width: 45%;">
+                <section class="section-wrapper" id="incompleteSection">
+                  <h4>Unfinished Book</h4>
+                  <div id="incompleteList" class="book-list">
+                  </div>
+                </section>
+                <section class="section-wrapper" id="completeSection">
+                    <h4>Finished Book</h4>
+                    <div id="completeList" class="book-list">
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

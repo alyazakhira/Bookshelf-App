@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root {
+    --brown: #8B575C;
+    --light-brown: #C98986;
+    --pink: #F6BDD1;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--brown);
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+.header {
+    color: white;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.section-wrapper {
+    background-color: var(--pink);
+    border: 1px solid var(--pink);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    min-width: 45%;
+}
+
+.section-wrapper h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.book-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-form-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.form-input {
+    border-radius: 0.5rem;
+    border: 0;
+    height: 2rem;
+    min-width: 80%;
+    padding: 0.3rem;
+}
+
+.form-label {
+    margin: 0;
+    padding: 0;
+}
+
+.submit-button {
+    border: 0;
+    border-radius: 0.5rem;
+    height: 2rem;
+    min-width: 15%;
+    cursor: pointer;
+    color: white;
+    background-color: var(--brown);
+}
+
+.submit-button:hover {
+    color: black;
+    background-color: var(--light-brown);
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-item {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.info h4 {
+    margin: 0;
+}
+
+.info p {
+    margin: 0.2rem;
+}
+
+.action {
+    display: flex;
+}
+
+.reverse-button {
+    background-color: aqua;
+    height: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-right: 0.1rem;
+}
+
+.reverse-button:hover {
+    background-color: deepskyblue;
+}
+
+.delete-button {
+    background-color: palevioletred;
+    color: white;
+    height: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-left: 0.1rem;
+}
+
+.delete-button:hover {
+    background-color: red;
+    color: white;
+}
+
+.book-result {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.book-result h4 {
+    margin: 0;
+}
+
+.book-result p {
+    margin: 0.2rem;
+}
